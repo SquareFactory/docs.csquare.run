@@ -48,7 +48,7 @@ jobs:
         run: docker push ${{ steps.square.outputs.image-release }}
   deploy:
     name: Deploy to Google Cloud Run
-    needs: [format, build]
+    needs: build-image
     runs-on: ubuntu-20.04
     steps:
       - name: Setup Google Cloud SDK
