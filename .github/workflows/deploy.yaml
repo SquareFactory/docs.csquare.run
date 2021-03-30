@@ -69,8 +69,8 @@ jobs:
           configure-docker: europe-west6-docker.pkg.dev
       - name: Deploy to Google Cloud Run
         run: |
-          gcloud run deploy signatures \
-            --image=${{ needs.build.outputs.image }} \
+          gcloud run deploy docs-csquare-run \
+            --image=${{ needs.build-image.outputs.image }} \
             --region=europe-west1 \
             --cpu=1 \
             --memory=128Mi \
