@@ -17,6 +17,10 @@ jobs:
           version: local
           service-account-key: ${{ secrets.GCLOUD_AUTH }}
           configure-docker: europe-west6-docker.pkg.dev
+      - name: Remove old content from bucket
+        shell: bash
+        run: |
+          gsutil rm gs://bucket/**
       - name: Upload static content
         shell: bash
         run: |
