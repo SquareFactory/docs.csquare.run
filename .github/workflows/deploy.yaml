@@ -63,7 +63,7 @@ jobs:
           buildctl build \
             --frontend=dockerfile.v0 --local dockerfile=. --local context=. \
             --export-cache type=local,dest=${{ env.BUILD_CACHE }},mode=max \
-            --import-cache type=registry,src=${{ env.BUILD_CACHE }} \
+            --import-cache type=local,src=${{ env.BUILD_CACHE }} \
             --output type=image,name=${{ needs.square.outputs.image-tag }},push=true
   deploy:
     name: Deploy to Google Cloud Run
