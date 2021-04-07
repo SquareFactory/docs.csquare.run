@@ -1,10 +1,6 @@
-FROM node:alpine AS deps
-COPY package.json ./
-RUN npm install
-
 FROM node:alpine AS builder
 COPY . .
-COPY --from=deps /node_modules ./node_modules
+RUN npm install
 RUN npm run build
 
 FROM nginx:1.19-alpine AS runner
