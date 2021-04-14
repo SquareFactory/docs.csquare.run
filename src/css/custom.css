@@ -6,20 +6,59 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Refer to portal-next theme colors to set the following custom color variables. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+    --ifm-color-primary: #be1622;
+    --ifm-color-secondary: #374b65;
+    --ifm-color-success: #01a4a7;
+    --ifm-color-info: #00a4fb;
+    --ifm-color-warning: #ffe400;
+    --ifm-color-danger: #ea4965;
+
+    --gray: #4c5b6c;
+    --gray-light-1: #94a1af;
+    --gray-light: #f4f3f6;
+    --gray-note: #ccd2d9;
+
+    --dark-theme-taint-1: #192432;
+    --dark-theme-taint-2: #202d3f;
+    --dark-theme-taint-3: #2b3d50;
+    --dark-theme-taint-4: white;
+
+    --light-theme-taint-1: #f1f1f4;
+    --light-theme-taint-2: white;
+    --light-theme-taint-3: white;
+    --light-theme-taint-4: #374b65;
+
+    --ifm-code-background: var(--gray-note);
+    --ifm-code-color: var(--gray);
+
+    --ifm-code-font-size: 95% rem;
+    --ifm-font-family-base: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --ifm-font-family-monospace: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+html[data-theme='dark'] {
+    background-color: var(--dark-theme-taint-1);
+    --ifm-footer-background-color: var(--dark-theme-taint-3);
+    --ifm-footer-link-color: var(--dark-theme-taint-4);
+
+    color: var(--dark-theme-taint-4);
+    --ifm-navbar-background-color: var(--dark-theme-taint-3);
+}
+
+html[data-theme='light'] {
+    background-color: var(--light-theme-taint-1);
+    --ifm-navbar-background-color: var(--light-theme-taint-3);
+    --ifm-footer-background-color: var(--light-theme-taint-3);
+
+    color: var(--light-theme-taint-4);
+    --ifm-footer-link-color: var(--light-theme-taint-4);
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: var(--ifm-color-secondary);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }

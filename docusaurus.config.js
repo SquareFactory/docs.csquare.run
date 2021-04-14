@@ -1,102 +1,105 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://docs.csquare.run',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'csquare-ai', // Usually your GitHub org/user name.
-  projectName: 'docs.csquare.run', // Usually your repo name.
-  themeConfig: {
-    navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+    title: 'csquare.ai',
+    tagline: 'MLOps Purpose-Built for Sustainability & Performance',
+    url: 'https://docs.csquare.run',
+    baseUrl: '/',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    favicon: 'img/favicon.ico',
+    organizationName: 'csquare.ai', // Usually your GitHub org/user name.
+    projectName: 'docs.csquare.run', // Usually your repo name.
+    themeConfig: {
+        navbar: {
+            title: 'csquare.ai',
+            logo: {
+                alt: 'c-square logo',
+                src: 'img/csquare-symbol.svg',
+            },
+            items: [
+                {
+                    to: 'docs/',
+                    activeBasePath: 'docs',
+                    label: 'Docs',
+                    position: 'left',
+                },
+                {to: 'blog', label: 'Blog', position: 'left'},
+                {
+                    href: 'https://github.com/csquare-ai',
+                    label: 'GitHub',
+                    position: 'right',
+                },
+            ],
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+        footer: {
+            links: [
+                {
+                    title: 'Docs',
+                    items: [
+                        {
+                            label: 'Getting Started',
+                            to: 'docs/',
+                        },
+                    ],
+                },
+                {
+                    title: 'Community',
+                    items: [
+                        {
+                            label: 'Stack Overflow',
+                            href: 'https://stackoverflow.com/questions/tagged/csquare',
+                        },
+                        {
+                            label: 'Twitter',
+                            href: 'https://twitter.com/csquareAI',
+                        },
+                        {
+                            label: 'Facebook',
+                            href: 'https://www.facebook.com/csquareAI',
+                        },
+                    ],
+                },
+                {
+                    title: 'More',
+                    items: [
+                        {
+                            label: 'Blog',
+                            to: 'blog',
+                        },
+                        {
+                            label: 'GitHub',
+                            href: 'https://github.com/facebook/docusaurus',
+                        },
+                        {
+                            label: 'LinkedIn',
+                            href: 'https://github.com/csquare-ai/',
+                        },
+                    ],
+                },
+            ],
+            copyright: `© Copyright ${new Date().getFullYear()} csquare.ai - All rights reserved - Made in Switzerland`,
         },
-      ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
+    presets: [
+        [
+            '@docusaurus/preset-classic',
             {
-              label: 'Getting Started',
-              to: 'docs/',
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    // Please change this to your repo.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/edit/master/website/',
+                },
+                blog: {
+                    showReadingTime: true,
+                    // Please change this to your repo.
+                    editUrl:
+                        'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
-  },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
+        ],
     ],
-  ],
 };
