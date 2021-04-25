@@ -12,5 +12,13 @@ module.exports = {
         'thank-you',
       ],
     },
+    {
+      type: 'category',
+      label: 'NVMesh documentation',
+      items: [
+        'nvmesh-installation',
+        'nvmesh-configuration',
+      ]
+    },
   ],
 };
