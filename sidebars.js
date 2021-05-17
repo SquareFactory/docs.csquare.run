@@ -8,7 +8,8 @@ module.exports = {
     {
       items: [
           'projects/create-a-project',
-          'projects/select-a-project'
+          'projects/select-a-project',
+          'projects/change-collaborators-permissions'
       ],
       label: 'Projects',
       type: "category"
