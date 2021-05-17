@@ -30,9 +30,6 @@
     --light-theme-taint-3: white;
     --light-theme-taint-4: #374b65;
 
-    --ifm-code-background: var(--gray-note);
-    --ifm-code-color: var(--gray);
-
     --ifm-code-font-size: 95% rem;
     --ifm-font-family-base: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     --ifm-font-family-monospace: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
@@ -40,25 +37,34 @@
 
 html[data-theme='dark'] {
     background-color: var(--dark-theme-taint-1);
+    color: var(--dark-theme-taint-4);
+
+    --ifm-code-background: var(--dark-theme-taint-3);
+    --ifm-code-color: var(--dark-theme-taint-4);
+
     --ifm-footer-background-color: var(--dark-theme-taint-3);
     --ifm-footer-link-color: var(--dark-theme-taint-4);
 
-    color: var(--dark-theme-taint-4);
     --ifm-navbar-background-color: var(--dark-theme-taint-3);
 }
 
 html[data-theme='light'] {
     background-color: var(--light-theme-taint-1);
-    --ifm-navbar-background-color: var(--light-theme-taint-3);
-    --ifm-footer-background-color: var(--light-theme-taint-3);
-
     color: var(--light-theme-taint-4);
+
+    --ifm-code-background: var(--light-theme-taint-3);
+    --ifm-code-color: var(--light-theme-taint-4);
+
+    --ifm-footer-background-color: var(--light-theme-taint-3);
     --ifm-footer-link-color: var(--light-theme-taint-4);
+
+    --ifm-navbar-background-color: var(--light-theme-taint-3);
 }
 
-.docusaurus-highlight-code-line {
-    background-color: var(--ifm-color-secondary);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
-}
+
+/*.docusaurus-highlight-code-line {*/
+/*    background-color: var(--ifm-color-secondary);*/
+/*    display: block;*/
+/*    !*margin: 0 calc(-1 * var(--ifm-pre-padding));*!*/
+/*    !*padding: 0 var(--ifm-pre-padding);*!*/
+/*}*/

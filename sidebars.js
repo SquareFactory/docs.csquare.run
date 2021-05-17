@@ -3,11 +3,8 @@
  */
 module.exports = {
   docs: [
-    {
-      items: ['get-started/welcome', 'get-started/quick-start'],
-      label: 'Get started',
-      type: 'category'
-    },
+    'get-started/welcome',
+    'get-started/quick-start',
     {
       items: [
         'datasets/introduction',
