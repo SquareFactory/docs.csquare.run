@@ -4,7 +4,7 @@ title: Create a dataset
 
 To create a dataset, you must have created at least a project.
 
-1. Select the project you want your dataset to be used for.
+1. [Select the project](docs/projects/select-a-project.md) you want your dataset to be used for.
 2. Open the sidebar, and click on the "Datasets" section.
 3. Click on the + button: Create a dataset
 4. Fill the form:
