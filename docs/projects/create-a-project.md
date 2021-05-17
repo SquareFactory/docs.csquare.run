@@ -2,13 +2,17 @@
 title: Create a project
 ---
 
-**csquare** is project-based, which means that all your jobs and datasets should be reassembled under project entities.
+:::success Tip
 
-:::info Datasets can be shared between project. Click [here](docs/datasets/import-an-existing-dataset-to-a-project.md)
+Datasets can be shared between projects. Click [here](docs/datasets/import-an-existing-dataset-to-a-project.md)
 to learn more.
+
 :::
 
-## Step 1: Access the project creation form
+
+**csquare** is project-based, which means that all your jobs and datasets should be reassembled under project entities. This guide will help you to create a project step-by-step.
+
+## 1. Access the project creation form
 
 ### From the hub
 
@@ -22,7 +26,7 @@ to learn more.
 
 1.2. Click on the `+` button in the top-right corner of the `Switch project` pop-up.
 
-## Step 2: Fill the form
+## 2. Fill the form
 
 2.1. Specify the name of your new project in the `Name` field.
 

@@ -16,4 +16,4 @@ accuracy.
 
 And it is Green!
 
-This document will help you get started with **csquare** and get the best of the platform. Click on [quick start](quick-start.mdx) to onboard!
+#### This document will help you get started with **csquare** and get the best of the platform. Click on [quick start](quick-start.mdx) to onboard!

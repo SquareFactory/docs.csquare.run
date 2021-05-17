@@ -9,6 +9,7 @@ module.exports = {
       items: [
           'projects/create-a-project',
           'projects/select-a-project',
+          'projects/delete-a-project',
           'projects/change-collaborators-permissions'
       ],
       label: 'Projects',
