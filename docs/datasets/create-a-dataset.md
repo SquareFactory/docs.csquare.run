@@ -8,9 +8,9 @@ The datasets namespace is shared across all the csquare infrastructure which the
 
 :::
 
-To create a dataset, you must have created at least a project. See [this guide](docs/projects/create-a-project.md) on how to create a project.
+To create a dataset, you must have created at least a project. See [this guide](../projects/create-a-project.mdx) on how to create a project.
 
-1. [Select the project](docs/projects/select-a-project.md) you want your dataset to be used for.
+1. [Select the project](../projects/select-a-project.mdx) you want your dataset to be used for.
 2. Open the sidebar, and click on the "Datasets" section.
 3. Click on the + button: Create a dataset
 4. Fill the form:
