@@ -34,6 +34,8 @@ module.exports = {
     }, {
       items: [
           'models/create-a-model',
+          'models/edit-a-model',
+          'models/delete-a-model',
           {items:['models/experiments/create-an-experiment'], label: 'Experiments', type: "category"}
       ],
       label: 'Models',
