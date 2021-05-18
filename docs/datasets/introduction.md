@@ -9,4 +9,4 @@ In the following pages, you will learn how to:
 
 - [create a dataset](create-a-dataset.md)
 - [upload files to a dataset](import-files-to-a-dataset.md)
-- [share a dataset across multiple projects](import-an-existing-dataset-to-a-project.md)
+- [share a dataset across multiple projects](import-an-existing-dataset-to-a-project.mdx)

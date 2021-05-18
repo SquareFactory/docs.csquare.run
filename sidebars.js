@@ -25,6 +25,8 @@ module.exports = {
         'datasets/create-a-dataset',
         'datasets/import-files-to-a-dataset',
         'datasets/import-an-existing-dataset-to-a-project',
+        'datasets/remove-a-dataset',
+        'datasets/delete-a-dataset',
         {items: ['datasets/resources/billing'], label: 'Resources', type: 'category'}
       ],
       label: 'Datasets',
