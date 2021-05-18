@@ -18,7 +18,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -36,7 +36,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Getting Started',
+              label: 'Quick Start',
               to: 'docs/',
             },
           ],
@@ -62,10 +62,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
             },
@@ -85,7 +81,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/csquare-ai/docs.csquare.run/edit/main/',
         },
         theme: {
