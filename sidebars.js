@@ -33,10 +33,14 @@ module.exports = {
       type: "category"
     }, {
       items: [
-          'models/create-a-model',
-          'models/edit-a-model',
-          'models/delete-a-model',
-          {items:['models/experiments/create-an-experiment'], label: 'Experiments', type: "category"}
+        'models/create-a-model',
+        'models/edit-a-model',
+        'models/delete-a-model',
+        {
+          items: ['models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-logs", "models/experiments/download-checkpoints","models/experiments/checkpoints"],
+          label: 'Experiments',
+          type: "category"
+        }
       ],
       label: 'Models',
       type: "category"
