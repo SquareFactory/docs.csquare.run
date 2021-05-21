@@ -37,16 +37,29 @@ module.exports = {
         'models/edit-a-model',
         'models/delete-a-model',
         {
-          items: ['models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-logs", "models/experiments/download-checkpoints","models/experiments/checkpoints"],
+          items: ['models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-logs", "models/experiments/download-checkpoints"],
           label: 'Experiments',
           type: "category"
         }
       ],
       label: 'Models',
       type: "category"
-    },
-    {
-      items:['organizations/introduction', 'organizations/create-an-organization', 'organizations/invite-to-organization'],
+    }, {
+      items: [
+        'labs/introduction',
+        "labs/create-a-lab",
+        'labs/start-a-lab',
+        'labs/delete-a-lab',
+        {
+          items: ['labs/shells/whats-a-shell', 'labs/shells/start-a-shell', "labs/shells/stop-a-shell", "labs/shells/attach-a-shell"],
+          label: 'Shells',
+          type: "category"
+        }
+      ],
+      label: 'Labs',
+      type: "category"
+    }, {
+      items: ['organizations/introduction', 'organizations/create-an-organization', 'organizations/invite-to-organization', 'organizations/delete-an-organization'],
       label: 'Organizations',
       type: "category"
     }
