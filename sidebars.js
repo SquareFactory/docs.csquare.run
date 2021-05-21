@@ -46,7 +46,7 @@ module.exports = {
       type: "category"
     },
     {
-      items:['organizations/introduction'],
+      items:['organizations/introduction', 'organizations/create-an-organization', 'organizations/invite-to-organization'],
       label: 'Organizations',
       type: "category"
     }
