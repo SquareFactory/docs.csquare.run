@@ -5,23 +5,34 @@
  * and scoped locally.
  */
 
+.button{
+  width: 100%;
+}
+
+.button:hover{
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);;
+}
+
+.container{
+  margin-inline-end: 42%;
+  margin-left: 1rem;
+}
+
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../../medias/img/screen.png");
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .features {
@@ -34,4 +45,20 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.title{
+  color: #374b65;
+  font-family: Rajdhani,Helvetica,sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.subtitle{
+  color: #374b65;
+  font-family: Rajdhani,Helvetica,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
 }

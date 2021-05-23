@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'csquare.ai',
-  tagline: 'MLOps Purpose-Built for Sustainability & Performance',
+  title: 'MLOps Purpose-Built for Sustainability & Performance',
+  tagline: 'Intuitive. Comprehensive. Green.',
   url: 'https://docs.csquare.run',
   baseUrl: '/',
   onBrokenLinks: 'throw',

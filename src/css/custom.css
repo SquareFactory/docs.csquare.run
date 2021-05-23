@@ -8,6 +8,9 @@
 /* You can override the default Infima variables here. */
 /* Refer to portal-next theme colors to set the following custom color variables. */
 :root {
+    --ifm-button-border-radius: 0;
+    --ifm-button-color: white;
+
     --ifm-color-primary: #be1622;
     --ifm-color-secondary: #374b65;
     --ifm-color-success: #01a4a7;
