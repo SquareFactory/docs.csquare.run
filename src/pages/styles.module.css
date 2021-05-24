@@ -15,13 +15,15 @@
 }
 
 .container{
-  margin-inline-end: 42%;
-  margin-left: 1rem;
+  margin-inline-end: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroBanner {
   padding: 4rem 0;
-  text-align: left;
+  text-align: center;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -43,8 +45,8 @@
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 .title{
