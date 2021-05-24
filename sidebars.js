@@ -27,13 +27,13 @@ module.exports = {
         'datasets/import-an-existing-dataset-to-a-project',
         'datasets/remove-a-dataset',
         'datasets/delete-a-dataset',
-        {items: ['datasets/resources/billing'], label: 'Resources', type: 'category'}
+        //{items: ['datasets/resources/billing'], label: 'Resources', type: 'category'}
       ],
       label: 'Datasets',
       type: "category"
     }, {
       items: [
-          'models/introduction',
+        'models/introduction',
         'models/create-a-model',
         'models/edit-a-model',
         'models/delete-a-model',

@@ -9,7 +9,7 @@ order to train a model. A dataset belongs to one or multiple projects.
 ## In this section, you will learn...
 
 ...how to:
-- [create a dataset](create-a-dataset.md)
+- [create a dataset](create-a-dataset.mdx)
 - [import files to a dataset](import-files-to-a-dataset.md)
 - [share a dataset across multiple projects](import-an-existing-dataset-to-a-project.mdx)
 - [remove a dataset](remove-a-dataset.mdx) from a project
