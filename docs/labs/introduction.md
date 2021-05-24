@@ -3,11 +3,8 @@ title: Introduction to labs
 ---
 
 ## Definition
-:::note Work in progress
-
-We are currently writing this section.
-
-:::
+A **lab** is a space where you can reserve (allocate) computational resources (CPU, RAM, GPU) for interactive use. This
+allows, for example, to launch a [shell](shells/whats-a-shell.md).
 
 ## In this section, you will learn... 
 

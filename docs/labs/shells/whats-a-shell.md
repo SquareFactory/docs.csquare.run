@@ -3,11 +3,7 @@ title: What's a shell
 ---
 
 ## Definition
-:::note Work in progress
-
-We are currently writing this section.
-
-:::
+A **shell** is a terminal directly run on one of csquare's nodes.
 
 ## In this section, you will learn...
 
