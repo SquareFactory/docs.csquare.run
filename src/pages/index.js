@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
     {
         title: 'Models',
-        imageUrl: 'medias/img/ico-models-light.svg',
+        imageUrl: 'https://storage.googleapis.com/cdn.csquare.run/docs/img/ico-models-light.svg',
         description: (
             <>
                 Your AI models, predictive machines, analysis pipeline, etc. Train your model and constantly monitor
@@ -21,7 +21,7 @@ const features = [
     },
     {
         title: 'Datasets',
-        imageUrl: 'medias/img/ico-datasets-light.svg',
+        imageUrl: 'https://storage.googleapis.com/cdn.csquare.run/docs/img/ico-datasets-light.svg',
         description: (
             <>
                 Datasets are used for training the model. Create a dataset using HTTP upload or Amazon S3.
@@ -31,7 +31,7 @@ const features = [
     },
     {
         title: 'Labs',
-        imageUrl: 'medias/img/ico-labs-light.svg',
+        imageUrl: 'https://storage.googleapis.com/cdn.csquare.run/docs/img/ico-labs-light.svg',
         description: (
             <>
                 Test a model before you train it and allocate the resources you need for training (CPUs, GPUs, memory).
