@@ -15,20 +15,38 @@
 }
 
 .container{
-  margin-inline-end: 50%;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  margin-inline-end: 50%;
+}
+
+.features {
   align-items: center;
+  display: flex;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureImage {
+  height: 4rem;
+  width: 4rem;
+}
+
+.featureTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
   background-image: url("https://cdn.csquare.run/docs/img/screen.png");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 4rem 0;
+  position: relative;
+  text-align: center;
 }
 
 @media screen and (max-width: 966px) {
@@ -37,16 +55,11 @@
   }
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-
-.featureImage {
-  height: 100px;
-  width: 100px;
+.subtitle{
+  color: #374b65;
+  font-family: Rajdhani,Helvetica,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .title{
@@ -56,11 +69,4 @@
   font-weight: 300;
   line-height: 1.2;
   margin-bottom: 15px;
-}
-
-.subtitle{
-  color: #374b65;
-  font-family: Rajdhani,Helvetica,sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
 }
