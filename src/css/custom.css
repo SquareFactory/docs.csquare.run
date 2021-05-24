@@ -64,10 +64,13 @@ html[data-theme='light'] {
     --ifm-navbar-background-color: var(--light-theme-taint-3);
 }
 
+.alert--secondary{
+    color: var(--ifm-font-color-base-inverse);
 
-/*.docusaurus-highlight-code-line {*/
-/*    background-color: var(--ifm-color-secondary);*/
-/*    display: block;*/
-/*    !*margin: 0 calc(-1 * var(--ifm-pre-padding));*!*/
-/*    !*padding: 0 var(--ifm-pre-padding);*!*/
-/*}*/
+    --ifm-alert-background-color: var(--gray-light-1);
+    --ifm-alert-border-color: var(--gray-light-1);
+}
+
+.admonition {
+    --ra-admonition-icon-color: var(--ifm-font-color-base-inverse);
+}

@@ -33,6 +33,7 @@ module.exports = {
       type: "category"
     }, {
       items: [
+          'models/introduction',
         'models/create-a-model',
         'models/edit-a-model',
         'models/delete-a-model',

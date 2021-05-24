@@ -17,6 +17,7 @@ const features = [
                 Accuracy, resources, download experiment logs and checkpoints.
             </>
         ),
+        path: 'docs/models/introduction'
     },
     {
         title: 'Datasets',
@@ -26,6 +27,7 @@ const features = [
                 Datasets are used for training the model. Create a dataset using HTTP upload or Amazon S3.
             </>
         ),
+        path: 'docs/datasets/introduction'
     },
     {
         title: 'Labs',
@@ -35,20 +37,23 @@ const features = [
                 Test a model before you train it and allocate the resources you need for training (CPUs, GPUs, memory).
             </>
         ),
+        path: 'docs/labs/introduction'
     },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, path}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4')}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+        <Link to={path}>
+            {imgUrl && (
+                <div className="text--center">
+                    <img className={styles.featureImage} src={imgUrl} alt={title}/>
+                </div>
+            )}
+            <h3>{title}</h3>
+        </Link>
+        <p>{description}</p>
     </div>
   );
 }

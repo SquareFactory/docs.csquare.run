@@ -37,7 +37,7 @@ module.exports = {
           items: [
             {
               label: 'Quick Start',
-              to: 'docs/',
+              to: 'docs/get-started/quick-start',
             },
           ],
         },
@@ -63,11 +63,11 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/csquare-ai',
             },
             {
               label: 'LinkedIn',
-              href: 'https://github.com/csquare-ai/',
+              href: 'https://www.linkedin.com/company/csquareai/',
             },
           ],
         },
