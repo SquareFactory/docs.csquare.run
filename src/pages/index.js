@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Feature from "../components/Feature";
 
 const features = [
     {
@@ -40,23 +41,6 @@ const features = [
         path: 'docs/labs/introduction'
     },
 ];
-
-function Feature({imageUrl, title, description, path}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4')}>
-        <Link to={path}>
-            {imgUrl && (
-                <div className="text--center">
-                    <img className={styles.featureImage} src={imgUrl} alt={title}/>
-                </div>
-            )}
-            <h3>{title}</h3>
-        </Link>
-        <p>{description}</p>
-    </div>
-  );
-}
 
 export default function Home() {
   const context = useDocusaurusContext();
