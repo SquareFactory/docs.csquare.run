@@ -28,7 +28,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: url("https://storage.googleapis.com/cdn.csquare.run/docs/img/screen.png");
+  background-image: url("https://cdn.csquare.run/docs/img/screen.png");
 }
 
 @media screen and (max-width: 966px) {
