@@ -13,9 +13,8 @@ const features = [
         imageUrl: 'https://cdn.csquare.run/docs/img/ico-models-light.svg',
         description: (
             <>
-                Your AI models, predictive machines, analysis pipeline, etc. Train your model and constantly monitor
-                Loss,
-                Accuracy, resources, download experiment logs and checkpoints.
+                Your AI models, predictive machines, analysis pipelines, etc. Train your models, and constantly monitor
+                loss, accuracy, resources. Download experiment logs and checkpoints.
             </>
         ),
         path: 'docs/models/introduction'
@@ -25,7 +24,7 @@ const features = [
         imageUrl: 'https://cdn.csquare.run/docs/img/ico-datasets-light.svg',
         description: (
             <>
-                Datasets are used for training the model. Create a dataset using HTTP upload or Amazon S3.
+                Datasets are used to train models. Create a dataset using HTTP upload or Amazon S3.
             </>
         ),
         path: 'docs/datasets/introduction'

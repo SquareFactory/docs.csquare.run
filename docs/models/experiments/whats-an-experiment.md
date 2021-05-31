@@ -3,7 +3,7 @@ title: What's an experiment
 ---
 
 ## Definition
-An **experiment** is a combination of *versioned code* and *dataset.s*.
+An **experiment** is a combination of *versioned code* and one or several [*datasets*](../introduction.md).
 
 ## In this section, you will learn...
 
@@ -12,5 +12,4 @@ An **experiment** is a combination of *versioned code* and *dataset.s*.
 - [create an experiment](create-an-experiment.mdx)
 - [run an experiment](run-an-experiment.mdx)
 - [stop an experiment](stop-an-experiment.mdx)
-- [download logs](download-logs.mdx)
 - [download checkpoints](download-checkpoints.mdx)

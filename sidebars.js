@@ -7,6 +7,7 @@ module.exports = {
     'get-started/quick-start',
     {
       items: [
+        'projects/introduction',
         'projects/create-a-project',
         'projects/select-a-project',
         'projects/delete-a-project',
@@ -38,7 +39,7 @@ module.exports = {
         'models/edit-a-model',
         'models/delete-a-model',
         {
-          items: ['models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-logs", "models/experiments/download-checkpoints"],
+          items: ['models/experiments/whats-an-experiment','models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-checkpoints"],
           label: 'Experiments',
           type: "category"
         }

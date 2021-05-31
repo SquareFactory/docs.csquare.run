@@ -3,8 +3,8 @@ title: Introduction to datasets
 ---
 
 ## Definition
-A **dataset** is a collection of data (texts, images, videos, tables...) which are used by a model in
-order to train a model. A dataset belongs to one or multiple projects.
+A **dataset** is a collection of data (texts, images, videos, tables...) that is used in
+order to train a [model](../models/introduction). A dataset can be used to one or multiple [projects](../projects/introduction.md).
 
 ## In this section, you will learn...
 
@@ -14,4 +14,3 @@ order to train a model. A dataset belongs to one or multiple projects.
 - [share a dataset across multiple projects](import-an-existing-dataset-to-a-project.mdx)
 - [remove a dataset](remove-a-dataset.mdx) from a project
 - [delete a dataset](delete-a-dataset.mdx)
-- handle dataset resources, as [billing](resources/billing.md)

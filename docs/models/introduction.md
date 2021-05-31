@@ -3,7 +3,7 @@ title: Introduction to models
 ---
 
 ## Definition
-A **model** is a combination of *code* and *datasets*, that are paired into [experiments](experiments/whats-an-experiment.md). It is contained into projects.
+A **model** is a combination of *code* and [*datasets*](../datasets/introduction), that are paired into [*experiments*](experiments/whats-an-experiment). A [*project*](../projects/introduction) can have one or several *models*, that gather one or several *experiments*.
 
 ## In this section, you will learn...
 

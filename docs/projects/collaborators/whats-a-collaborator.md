@@ -4,7 +4,7 @@ title: What's a collaborator?
 
 ## Definition
 
-**Collaborators** are people you want to share your projects with. They can be from one of your organizations or
+**Collaborators** are people you want to share your projects with. They can be from one of your [organizations](../../organizations/introduction) or
 external contributors.
 
 ## Permissions
@@ -14,9 +14,9 @@ Collaborators' access are controlled using **permissions**, that can be managed 
 
 |Permission|Possible actions|
 |-----|--------------------------------------------------------------------------------------------------|
-|Read |<ul><li>Navigate through the whole project: datasets, models, labs.</li> <li>See the project's collaborators.</li></ul>|
-|Write|<ul><li>Read access</li><li>Create, delete, and modify projects, datasets, labs and models.</li></ul>|
-|Admin|<ul><li>Read + write access.</li><li>Manage collaborators permissions.</li></ul>
+|Read |<ul><li>Navigate through the whole project: datasets, models, labs</li> <li>See the project's collaborators</li></ul>|
+|Write|<ul><li>Read access</li><li>Create, delete, and modify projects, datasets, labs and models</li></ul>|
+|Admin|<ul><li>Read + write access</li><li>Manage collaborators permissions</li></ul>
 
 
 ## In this section, you will learn...
