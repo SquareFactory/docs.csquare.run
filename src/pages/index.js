@@ -13,8 +13,7 @@ const features = [
         imageUrl: 'https://cdn.csquare.run/docs/img/ico-models-light.svg',
         description: (
             <>
-                Your AI models, predictive machines, analysis pipelines, etc. Train your models, and constantly monitor
-                loss, accuracy, resources. Download experiment logs and checkpoints.
+                Your AI models, predictive machines, analysis pipelines, etc. Train your models, and download experiment checkpoints.
             </>
         ),
         path: 'docs/models/introduction'
@@ -28,6 +27,15 @@ const features = [
             </>
         ),
         path: 'docs/datasets/introduction'
+    }, {
+        title: 'Organizations',
+        imageUrl: 'https://cdn.csquare.run/docs/img/ico-organization-light.svg',
+        description: (
+            <>
+                Work as a team, invite your collaborators, and manage access permissions.
+            </>
+        ),
+        path: 'docs/organizations/introduction'
     },
 ];
 

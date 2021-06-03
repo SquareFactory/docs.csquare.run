@@ -4,7 +4,7 @@ title: Introduction to organizations
 
 ## Definition
 
-**Organizations** are groups of people that can share [*projects*] and data. Access permissions are managed by organization admins.
+**Organizations** are groups of people that can share [projects](../projects/introduction) and data. Access permissions are managed by organization admins.
 
 ## Permissions
 
