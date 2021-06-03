@@ -29,16 +29,6 @@ const features = [
         ),
         path: 'docs/datasets/introduction'
     },
-    {
-        title: 'Labs',
-        imageUrl: 'https://cdn.csquare.run/docs/img/ico-labs-light.svg',
-        description: (
-            <>
-                Test a model before you train it and allocate the resources you need for training (CPUs, GPUs, memory).
-            </>
-        ),
-        path: 'docs/labs/introduction'
-    },
 ];
 
 export default function Home() {

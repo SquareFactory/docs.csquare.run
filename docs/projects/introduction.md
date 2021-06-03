@@ -3,7 +3,7 @@ title: Introduction to projects
 ---
 
 ## Definition
-A **project** reassemble [models](../models/introduction.md), [datasets](../datasets/introduction.md) and [labs](../labs/introduction.md). Projects can be shared with [collaborators](collaborators/whats-a-collaborator.md).
+A **project** reassemble [models](../models/introduction.md) and [datasets](../datasets/introduction.md). Projects can be shared with [collaborators](collaborators/whats-a-collaborator.md).
 
 ## In this section, you will learn...
 
