@@ -47,20 +47,6 @@ module.exports = {
       label: 'Models',
       type: "category"
     }, {
-      items: [
-        'labs/introduction',
-        "labs/create-a-lab",
-        'labs/start-a-lab',
-        'labs/delete-a-lab',
-        {
-          items: ['labs/shells/whats-a-shell', 'labs/shells/start-a-shell', "labs/shells/stop-a-shell", "labs/shells/attach-a-shell"],
-          label: 'Shells',
-          type: "category"
-        }
-      ],
-      label: 'Labs',
-      type: "category"
-    }, {
       items: ['organizations/introduction', 'organizations/create-an-organization', 'organizations/invite-to-organization', 'organizations/delete-an-organization'],
       label: 'Organizations',
       type: "category"
