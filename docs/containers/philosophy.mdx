@@ -1,0 +1,60 @@
+---
+title: Container philosophy
+---
+
+## What is a container?
+
+Containers are used at the core of csquare. They allow you to bring your own software stack into the platform to run your experiments.
+csquare currently uses Docker-compatible containers.
+
+While containers are traditionally used to deploy small workloads on a server, we use the containers to create a secure, customizable sandbox to run your experiments.
+Depending on your compute resources requirements, your container might be the only one to be executed on a compute node.
+
+On the csquare platform, containers are used to help you tu run your workloads with all the tools you need. You might want to use a specific version of Pytorch, or even a specific Linux distribution.
+If your model requires GPU support, we recommend you to use official NVIDIA images that you can find on the [NVIDIA NGC](https://ngc.nvidia.com/catalog/containers).
+
+## Use-cases
+
+### Train a generic Pytorch model
+
+Suppose that you want to train a model to recognize cars and this is based on Pytorch.
+You might have a Git repository with the following structure:
+
+```
+.
+├── lib
+│   ├── python1.py
+│   └── python2.py
+├── README.md
+├── requirements.txt
+└── train.py
+```
+
+In this case, to start your training, you will run the following command:
+
+```shell title="Training startup command"
+pip install -r requirements.txt
+python train.py [--epoch=XX --other-args]
+```
+
+This model uses GPUs acceleration; you need a Docker image that is made for GPUs.
+
+You finally have the following requirements:
+
+- Python with Pytorch;
+- GPU support.
+
+By browsing the [NVIDIA NGC](https://ngc.nvidia.com/catalog/containers?query=pytorch), you can quickly find an image that fits your needs.
+In this example, we will use: [nvcr.io/nvidia/pytorch:21.05-py3](https://ngc.nvidia.com/catalog/containers/nvidia:pytorch) which comes with:
+
+- Python 3;
+- Pytorch v21.05;
+- GPU support.
+
+:::note
+In order to use the NVIDIA NGC, you need to [set up your registries accordingly](/docs/containers/registries#nvidia-ngc).
+:::
+
+:::danger
+Ensure that you allocate for memory than your container image size, otherwise your experiment might fail with an `OUT_OF_MEMORY` error.
+:::

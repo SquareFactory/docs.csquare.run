@@ -1,0 +1,81 @@
+---
+title: Registries
+---
+
+import VideoPlayer from '../../src/components/VideoPlayer';
+
+Containers are **pulled** (e.g., downloaded) from containers registries. The most famous one is probably the [DockerHub](https://hub.docker.com/).
+
+## Setup a private registry
+
+You can setup any Docker-compatible registry on csquare using the registry credentials.
+
+:::caution
+
+Registries are user-based, which means that all the collaborators that run experiments that require access to your private registry need to set up the credentials accordingly.
+
+:::
+
+<VideoPlayer src="https://cdn.csquare.run/docs/webm/registry-setup.webm" />
+
+### Step-by-step
+
+1. Login to your csquare account;
+2. Go to the [settings page](https://csquare.run/settings);
+3. Scroll down to "Manage your registries" section;
+4. Fill your `host`, `user` and `password`.
+5. Hit the `Save` button.
+
+## [DockerHub](https://hub.docker.com)
+
+[DockerHub](https://hub.docker.com) is the default Docker registry; this is a general-purpose registry where you can find variety of container images from `node` to `php` and also minimal distribution images such as `ubuntu:20.04`.
+
+:::info
+
+Even if you are only using public images from the DockerHub, we highly recommend you to setup your DockerHub credentials on csquare to avoid being rate-limited.
+See [DockerHub announcement on rate limit](https://www.docker.com/increase-rate-limits) for more information.
+
+:::
+
+### Step-by-step
+
+0. Login/register to the DockerHub;
+1. Go the [Account Security](https://hub.docker.com/settings/security) page;
+2. Create a `New Access Token` and store it carefully;
+3. Setup your registry using the following values:
+
+| URL              | User              | Password              |
+| ---------------- | ----------------- | --------------------- |
+| `auth.docker.io` | `[your-username]` | `[your-access-token]` |
+
+## [NVIDIA NGC](https://ngc.nvidia.com/catalog/containers)
+
+The [NVIDIA NGC](https://ngc.nvidia.com) is the home of the official NVIDIA containers. You will find the latest and best images to run your GPU-based experiments.
+You can learn more about the NGC on the [introduction page](https://ngc.nvidia.com/catalog/collections/nvidia:gettingstarted).
+
+You can also browse the available containers on the [dedicated container page](https://ngc.nvidia.com/catalog/containers).
+
+Since the NGC is _not public_ - which means that you have to provide an API key to csquare - you first need to register on the NGC.
+
+1. Sign up here: [https://ngc.nvidia.com/signin](https://ngc.nvidia.com/signin) and confirm your email, accept the terms, etc.
+2. [Create an API key](https://ngc.nvidia.com/setup/api-key) - copy the key and store it carefully.
+3. Setup the **TWO** following registries on csquare:
+
+| URL                | User          | Password         |
+| ------------------ | ------------- | ---------------- |
+| `nvcr.io`          | `$oauthtoken` | `[your-api-key]` |
+| `authn.nvidia.com` | `$oauthtoken` | `[your-api-key]` |
+
+:::note
+
+As mentioned in the [NGC instruction page](https://ngc.nvidia.com/setup/api-key), the user is **literally** `$oauthtoken`.
+
+:::
+
+## Google Cloud Registry / Google Artifact Registry
+
+This feature is not yet available and is planned for Q3 2021.
+
+## Amazon Elastic Container Registry
+
+This feature is not yet available and is planned for Q3 2021.

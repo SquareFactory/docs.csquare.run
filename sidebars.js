@@ -12,13 +12,18 @@ module.exports = {
         'projects/select-a-project',
         'projects/delete-a-project',
         {
-          items: ['projects/collaborators/whats-a-collaborator', 'projects/collaborators/invite-a-collaborator', 'projects/collaborators/update-permissions', 'projects/collaborators/remove-a-collaborator'],
+          items: [
+            'projects/collaborators/whats-a-collaborator',
+            'projects/collaborators/invite-a-collaborator',
+            'projects/collaborators/update-permissions',
+            'projects/collaborators/remove-a-collaborator',
+          ],
           label: 'Collaborators',
-          type: "category"
-        }
+          type: 'category',
+        },
       ],
       label: 'Projects',
-      type: "category"
+      type: 'category',
     },
     {
       items: [
@@ -31,25 +36,44 @@ module.exports = {
         //{items: ['datasets/resources/billing'], label: 'Resources', type: 'category'}
       ],
       label: 'Datasets',
-      type: "category"
-    }, {
+      type: 'category',
+    },
+    {
+      label: 'Containers',
+      type: 'category',
+      items: ['containers/philosophy', 'containers/registries', 'containers/examples'],
+    },
+    {
       items: [
         'models/introduction',
         'models/create-a-model',
         'models/edit-a-model',
         'models/delete-a-model',
         {
-          items: ['models/experiments/whats-an-experiment','models/experiments/go-to-the-experiment-page', 'models/experiments/create-an-experiment', 'models/experiments/run-an-experiment', 'models/experiments/stop-an-experiment', "models/experiments/download-checkpoints"],
+          items: [
+            'models/experiments/whats-an-experiment',
+            'models/experiments/go-to-the-experiment-page',
+            'models/experiments/create-an-experiment',
+            'models/experiments/run-an-experiment',
+            'models/experiments/stop-an-experiment',
+            'models/experiments/download-checkpoints',
+          ],
           label: 'Experiments',
-          type: "category"
-        }
+          type: 'category',
+        },
       ],
       label: 'Models',
-      type: "category"
-    }, {
-      items: ['organizations/introduction', 'organizations/create-an-organization', 'organizations/invite-to-organization', 'organizations/delete-an-organization'],
+      type: 'category',
+    },
+    {
+      items: [
+        'organizations/introduction',
+        'organizations/create-an-organization',
+        'organizations/invite-to-organization',
+        'organizations/delete-an-organization',
+      ],
       label: 'Organizations',
-      type: "category"
-    }
-  ]
-}
+      type: 'category',
+    },
+  ],
+};

@@ -1,0 +1,147 @@
+---
+title: Import files to a dataset
+---
+
+import VideoPlayer from '../../src/components/VideoPlayer';
+
+You just created a dataset. You now need to upload some files into it.
+
+## Get access and secret keys
+
+:::note
+For now, access and secret keys are restricted to a single dataset.
+We plan to allow the creation of project and organization-based keys in the near future.
+:::
+
+Datasets, under-the-hook, S3-compatible buckets. You can use all the tools of the S3 environment.
+In order to read, write or delete files to your datasets, you need to get the dataset **access and secret keys**.
+
+### Video guide
+
+<VideoPlayer src="https://cdn.csquare.run/docs/webm/get-dataset-keys.webm" />
+
+### Step-by-step
+
+0. Login/sign up to your csquare account;
+1. Select the project and got to the dataset page;
+2. Copy your access and secret key.
+
+## Access to the web interface
+
+To simplify the dataset uploads, you can simply use the web interface available at: [https://storage.csquare.run](https://storage.csquare.run).
+
+![Datasets Web UI](https://storage.googleapis.com/cdn.csquare.run/docs/img/datasets-web-ui.png)
+
+On the web interface, you can quickly upload, delete files via your web browser.
+
+## Using the `s3cmd` command line interface
+
+### Installation
+
+You can also use the famous `s3cmd` CLI to upload files to your datasets. You can install `s3cmd` from the (official s3cmd website)[https://s3tools.org/s3cmd].
+You can check the installation status of s3cmd by running:
+
+```shell title=CLI
+s3cmd --help
+```
+
+which should output:
+
+```
+Usage: s3cmd [options] COMMAND [parameters]
+
+S3cmd is a tool for managing objects in Amazon S3 storage. It allows for
+making and removing "buckets" and uploading, downloading and removing
+"objects" from these buckets.
+
+Options:
+  -h, --help            show this help message and exit
+  --configure           Invoke interactive (re)configuration tool. Optionally
+                        use as '--configure s3://some-bucket' to test access
+                        to a specific bucket instead of attempting to list
+                        them all.
+  -c FILE, --config=FILE
+                        Config file name. Defaults to $HOME/.s3cfg
+  --dump-config         Dump current configuration after parsing config files
+                        and command line options and exit.
+  --access_key=ACCESS_KEY
+                        AWS Access Key
+  --secret_key=SECRET_KEY
+                        AWS Secret Key
+[...]
+```
+
+### Configuring `s3cmd `
+
+Once you have a working CLI, you can configure `s3cmd` by running:
+
+```shell
+s3cmd --configure
+```
+
+and answer the interactive questions:
+
+```shell title="Access key"
+Enter new values or accept defaults in brackets with Enter.
+Refer to user manual for detailed description of all options.
+
+Access key and Secret key are your identifiers for Amazon S3. Leave them empty for using the env variables.
+Access Key: [YOUR ACCESS KEY]
+```
+
+```shell title="Secret key"
+Secret Key: [YOUR SECRET KEY]
+```
+
+```shell title="Default region"
+Default Region [US]: ch-dk-2
+```
+
+```shell title="S3 endpoint"
+Use "s3.amazonaws.com" for S3 Endpoint and not modify it to the target Amazon S3.
+S3 Endpoint [s3.amazonaws.com]: storage.csquare.run
+```
+
+```shell title)"Bucket endpoint"
+Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
+if the target S3 system supports dns based buckets.
+DNS-style bucket+hostname:port template for accessing a bucket [%(bucket)s.s3.amazonaws.com]: storage.csquare.run
+```
+
+You can then use the default configuration values by hitting `Enter` as many times as required.
+
+```shell title="Keys validation"
+Test access with supplied credentials? [Y/n]
+Please wait, attempting to list all buckets...
+Success. Your access key and secret key worked fine :-)
+```
+
+Do not forget to save your configuration.
+
+```shell title="Save your configuration"
+Save settings? [y/N] y
+Configuration saved to '/home/[you]/.s3cfg'
+```
+
+You can now test the connection by listing the associated buckets:
+
+```shell-session
+user@computer:~$ s3cmd ls
+2020-11-22 21:32  s3://mnist
+```
+
+All the available commands are accessible by running `s3cmd --help` or on the [`s3cmd` documentation](https://s3tools.org/usage).
+
+### Basic usage
+
+```shell title="Copy a directory to a dataset"
+s3cmd put --recursive [path] s3://[dataset]
+```
+
+### Advanced usage
+
+If you do not want to save your `s3cmd` configuration or want to use `s3cmd`n without the `--configure` flag, you can pass the following options.
+
+```shell title="Usage without configuration"
+s3cmd --access_key=[access-key] --secret_key=[secret-key] --host=storage.csquare.run --host-bucket=storage.csquare.run [command] [args]
+```

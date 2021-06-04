@@ -5,6 +5,9 @@
  * work well for content-centric websites.
  */
 
+@import "~@fontsource/lato/400.css";
+@import "~@fontsource/rajdhani/500.css";
+
 /* You can override the default Infima variables here. */
 /* Refer to portal-next theme colors to set the following custom color variables. */
 :root {
@@ -33,9 +36,10 @@
     --light-theme-taint-3: white;
     --light-theme-taint-4: #374b65;
 
-    --ifm-code-font-size: 95% rem;
-    --ifm-font-family-base: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    --ifm-font-family-monospace: Rajdhani, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    /*--ifm-code-font-size: 95% rem; */
+    --ifm-font-family-base: Lato, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --ifm-font-family-title: Rajdhani, var(--ifm-font-family-base);
 }
 
 html[data-theme='dark'] {
@@ -62,6 +66,10 @@ html[data-theme='light'] {
     --ifm-footer-link-color: var(--light-theme-taint-4);
 
     --ifm-navbar-background-color: var(--light-theme-taint-3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ifm-font-family-title);
 }
 
 .alert--secondary{
