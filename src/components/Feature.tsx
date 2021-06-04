@@ -1,24 +1,24 @@
 import clsx from "clsx";
 import styles from "../pages/styles.module.css";
 import React from "react";
-import useBaseUrl from "@docusaurus/core/lib/client/exports/useBaseUrl";
 import Link from "@docusaurus/Link";
+import ThemedImage from '@theme/ThemedImage';
 
-interface FeatureProps {
+export interface FeatureProps {
   description: string,
-  imageUrl: string,
+  imageUrls: { light: string, dark: string },
   path: string,
   title: string,
 }
 
-const Feature = ({imageUrl, title, description, path}: FeatureProps) => {
-  const imgUrl = useBaseUrl(imageUrl);
+const Feature = ({imageUrls, title, description, path}: FeatureProps) => {
+  console.log(imageUrls)
   return (
     <div className={clsx('col col--4')}>
       <Link to={path}>
-        {imgUrl && (
+        {imageUrls && (
           <div className="text--center">
-            <img className={styles.featureImage} src={imgUrl} alt={title}/>
+            <ThemedImage className={styles.featureImage} sources={(imageUrls)} alt={title}/>
           </div>
         )}
         <h3 className={styles.featureTitle}>{title}</h3>

@@ -10,7 +10,7 @@ import Feature from "../components/Feature";
 const features = [
     {
         title: 'Models',
-        imageUrl: 'https://cdn.csquare.run/docs/img/ico-models-light.svg',
+        imageUrls: {light: 'https://cdn.csquare.run/docs/img/ico-models-light.svg', dark: 'https://cdn.csquare.run/docs/img/ico-models-dark.svg'},
         description: (
             <>
                 Your AI models, predictive machines, analysis pipelines, etc. Train your models, and download experiment checkpoints.
@@ -20,7 +20,7 @@ const features = [
     },
     {
         title: 'Datasets',
-        imageUrl: 'https://cdn.csquare.run/docs/img/ico-datasets-light.svg',
+        imageUrls: {light:'https://cdn.csquare.run/docs/img/ico-datasets-light.svg', dark: 'https://cdn.csquare.run/docs/img/ico-datasets-dark.svg'},
         description: (
             <>
                 Datasets are used to train models. Create a dataset using HTTP upload or Amazon S3.
@@ -29,7 +29,7 @@ const features = [
         path: 'docs/datasets/introduction'
     }, {
         title: 'Organizations',
-        imageUrl: 'https://cdn.csquare.run/docs/img/ico-organization-light.svg',
+        imageUrls: {light:'https://cdn.csquare.run/docs/img/ico-organization-light.svg', dark: 'https://cdn.csquare.run/docs/img/ico-datasets-dark.svg'},
         description: (
             <>
                 Work as a team, invite your collaborators, and manage access permissions.
