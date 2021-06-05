@@ -6,6 +6,16 @@ module.exports = {
     'get-started/welcome',
     'get-started/quick-start',
     {
+      label: 'Organizations',
+      type: 'category',
+      items: [
+        'organizations/introduction',
+        'organizations/create-an-organization',
+        'organizations/invite-to-organization',
+        'organizations/delete-an-organization',
+      ],
+    },
+    {
       items: [
         'projects/introduction',
         'projects/create-a-project',
@@ -26,6 +36,8 @@ module.exports = {
       type: 'category',
     },
     {
+      label: 'Datasets',
+      type: 'category',
       items: [
         'datasets/introduction',
         'datasets/create-a-dataset',
@@ -33,10 +45,7 @@ module.exports = {
         'datasets/import-an-existing-dataset-to-a-project',
         'datasets/remove-a-dataset',
         'datasets/delete-a-dataset',
-        //{items: ['datasets/resources/billing'], label: 'Resources', type: 'category'}
       ],
-      label: 'Datasets',
-      type: 'category',
     },
     {
       label: 'Containers',
@@ -44,36 +53,21 @@ module.exports = {
       items: ['containers/philosophy', 'containers/registries', 'containers/examples'],
     },
     {
-      items: [
-        'models/introduction',
-        'models/create-a-model',
-        'models/edit-a-model',
-        'models/delete-a-model',
-        {
-          items: [
-            'models/experiments/whats-an-experiment',
-            'models/experiments/go-to-the-experiment-page',
-            'models/experiments/create-an-experiment',
-            'models/experiments/run-an-experiment',
-            'models/experiments/stop-an-experiment',
-            'models/experiments/download-checkpoints',
-          ],
-          label: 'Experiments',
-          type: 'category',
-        },
-      ],
       label: 'Models',
       type: 'category',
+      items: ['models/introduction', 'models/create-a-model', 'models/edit-a-model', 'models/delete-a-model'],
     },
     {
-      items: [
-        'organizations/introduction',
-        'organizations/create-an-organization',
-        'organizations/invite-to-organization',
-        'organizations/delete-an-organization',
-      ],
-      label: 'Organizations',
+      label: 'Experiments',
       type: 'category',
+      items: [
+        'experiments/whats-an-experiment',
+        'experiments/go-to-the-experiment-page',
+        'experiments/create-an-experiment',
+        'experiments/run-an-experiment',
+        'experiments/stop-an-experiment',
+        'experiments/download-checkpoints',
+      ],
     },
   ],
 };

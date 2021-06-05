@@ -72,7 +72,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `© Copyright ${new Date().getFullYear()} csquare.ai - All rights reserved - Made in Switzerland`,
+      copyright: `© Copyright 2020-${new Date().getFullYear()} csquare.ai - All rights reserved - Made in Switzerland`,
     },
   },
   presets: [
