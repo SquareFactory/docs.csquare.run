@@ -5,16 +5,16 @@
  * and scoped locally.
  */
 
-.button{
+.button {
   width: 100%;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);;
+  border-color: var(--ifm-color-primary);
 }
 
-.container{
+.container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -33,14 +33,14 @@
   width: 4rem;
 }
 
-.featureTitle{
+.featureTitle {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .heroBanner {
-  background-image: url("https://cdn.csquare.run/docs/img/screen.png");
+  background-image: url('https://cdn.csquare.run/docs/img/screen.png');
   background-position: center center;
   background-size: cover;
   overflow: hidden;
@@ -55,16 +55,16 @@
   }
 }
 
-.subtitle{
+.subtitle {
   color: #374b65;
-  font-family: Rajdhani,Helvetica,sans-serif;
+  font-family: Rajdhani, Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.title{
+.title {
   color: #374b65;
-  font-family: Rajdhani,Helvetica,sans-serif;
+  font-family: Rajdhani, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;

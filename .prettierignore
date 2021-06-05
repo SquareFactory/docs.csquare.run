@@ -1,0 +1,9 @@
+/.docusaurus
+/.idea
+/docker
+/node_modules
+/static
+
+/Dockerfile
+/package-lock.json
+/.*ignore

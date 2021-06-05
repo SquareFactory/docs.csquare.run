@@ -5,80 +5,85 @@
  * work well for content-centric websites.
  */
 
-@import "~@fontsource/lato/400.css";
-@import "~@fontsource/rajdhani/500.css";
+@import '~@fontsource/lato/400.css';
+@import '~@fontsource/rajdhani/500.css';
 
 /* You can override the default Infima variables here. */
 /* Refer to portal-next theme colors to set the following custom color variables. */
 :root {
-    --ifm-button-border-radius: 0;
-    --ifm-button-color: white;
+  --ifm-button-border-radius: 0;
+  --ifm-button-color: white;
 
-    --ifm-color-primary: #be1622;
-    --ifm-color-secondary: #374b65;
-    --ifm-color-success: #01a4a7;
-    --ifm-color-info: #00a4fb;
-    --ifm-color-warning: #ffe400;
-    --ifm-color-danger: #ea4965;
+  --ifm-color-primary: #be1622;
+  --ifm-color-secondary: #374b65;
+  --ifm-color-success: #01a4a7;
+  --ifm-color-info: #00a4fb;
+  --ifm-color-warning: #ffe400;
+  --ifm-color-danger: #ea4965;
 
-    --gray: #4c5b6c;
-    --gray-light-1: #94a1af;
-    --gray-light: #f4f3f6;
-    --gray-note: #ccd2d9;
+  --gray: #4c5b6c;
+  --gray-light-1: #94a1af;
+  --gray-light: #f4f3f6;
+  --gray-note: #ccd2d9;
 
-    --dark-theme-taint-1: #192432;
-    --dark-theme-taint-2: #202d3f;
-    --dark-theme-taint-3: #2b3d50;
-    --dark-theme-taint-4: white;
+  --dark-theme-taint-1: #192432;
+  --dark-theme-taint-2: #202d3f;
+  --dark-theme-taint-3: #2b3d50;
+  --dark-theme-taint-4: white;
 
-    --light-theme-taint-1: #f1f1f4;
-    --light-theme-taint-2: white;
-    --light-theme-taint-3: white;
-    --light-theme-taint-4: #374b65;
+  --light-theme-taint-1: #f1f1f4;
+  --light-theme-taint-2: white;
+  --light-theme-taint-3: white;
+  --light-theme-taint-4: #374b65;
 
-    /*--ifm-code-font-size: 95% rem; */
-    --ifm-font-family-base: Lato, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-    --ifm-font-family-title: Rajdhani, var(--ifm-font-family-base);
+  /*--ifm-code-font-size: 95% rem; */
+  --ifm-font-family-base: Lato, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --ifm-font-family-title: Rajdhani, var(--ifm-font-family-base);
 }
 
 html[data-theme='dark'] {
-    background-color: var(--dark-theme-taint-1);
-    color: var(--dark-theme-taint-4);
+  background-color: var(--dark-theme-taint-1);
+  color: var(--dark-theme-taint-4);
 
-    --ifm-code-background: var(--dark-theme-taint-3);
-    --ifm-code-color: var(--dark-theme-taint-4);
+  --ifm-code-background: var(--dark-theme-taint-3);
+  --ifm-code-color: var(--dark-theme-taint-4);
 
-    --ifm-footer-background-color: var(--dark-theme-taint-3);
-    --ifm-footer-link-color: var(--dark-theme-taint-4);
+  --ifm-footer-background-color: var(--dark-theme-taint-3);
+  --ifm-footer-link-color: var(--dark-theme-taint-4);
 
-    --ifm-navbar-background-color: var(--dark-theme-taint-3);
+  --ifm-navbar-background-color: var(--dark-theme-taint-3);
 }
 
 html[data-theme='light'] {
-    background-color: var(--light-theme-taint-1);
-    color: var(--light-theme-taint-4);
+  background-color: var(--light-theme-taint-1);
+  color: var(--light-theme-taint-4);
 
-    --ifm-code-background: var(--light-theme-taint-3);
-    --ifm-code-color: var(--light-theme-taint-4);
+  --ifm-code-background: var(--light-theme-taint-3);
+  --ifm-code-color: var(--light-theme-taint-4);
 
-    --ifm-footer-background-color: var(--light-theme-taint-3);
-    --ifm-footer-link-color: var(--light-theme-taint-4);
+  --ifm-footer-background-color: var(--light-theme-taint-3);
+  --ifm-footer-link-color: var(--light-theme-taint-4);
 
-    --ifm-navbar-background-color: var(--light-theme-taint-3);
+  --ifm-navbar-background-color: var(--light-theme-taint-3);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--ifm-font-family-title);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ifm-font-family-title);
 }
 
-.alert--secondary{
-    color: var(--ifm-font-color-base-inverse);
+.alert--secondary {
+  color: var(--ifm-font-color-base-inverse);
 
-    --ifm-alert-background-color: var(--gray-light-1);
-    --ifm-alert-border-color: var(--gray-light-1);
+  --ifm-alert-background-color: var(--gray-light-1);
+  --ifm-alert-border-color: var(--gray-light-1);
 }
 
 .admonition {
-    --ra-admonition-icon-color: var(--ifm-font-color-base-inverse);
+  --ra-admonition-icon-color: var(--ifm-font-color-base-inverse);
 }

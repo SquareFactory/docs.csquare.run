@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "format": "prettier --write '**'",
+    "format:check": "prettier --check '**'",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
