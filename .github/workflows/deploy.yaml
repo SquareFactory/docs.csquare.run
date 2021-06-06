@@ -46,7 +46,7 @@ jobs:
         run: npm install
       - name: Run ESLint
         run: npm run lint
-  build-content:
+  build:
     name: Build static content
     runs-on: ubuntu-20.04
     steps:
@@ -67,9 +67,9 @@ jobs:
         with:
           name: static-content
           path: build/
-  build-image:
+  docker:
     name: Build Docker image
-    needs: build-content
+    needs: [build]
     runs-on: ubuntu-20.04
     outputs:
       image: ${{ steps.square.outputs.image-release }}
@@ -93,12 +93,14 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-          --tag=${{ steps.square.outputs.image-release }} .
+            --tag=${{ steps.square.outputs.image-release }} .
+        env:
+          DOCKER_BUILDKIT: '1'
       - name: Push Docker Image to Artifact Registry
         run: docker push ${{ steps.square.outputs.image-release }}
   deploy:
     name: Deploy to Google Cloud Run
-    needs: [format, build-image]
+    needs: [format, lint, docker]
     runs-on: ubuntu-20.04
     steps:
       - name: Setup Google Cloud SDK
@@ -110,7 +112,7 @@ jobs:
       - name: Deploy to Google Cloud Run
         run: |
           gcloud run deploy docs-csquare-run \
-            --image=${{ needs.build-image.outputs.image }} \
+            --image=${{ needs.docker.outputs.image }} \
             --region=europe-west1 \
             --cpu=1 \
             --memory=128Mi \
