@@ -50,12 +50,18 @@ module.exports = {
     {
       label: 'Containers',
       type: 'category',
-      items: ['containers/philosophy', 'containers/registries', 'containers/examples'],
+      items: ['containers/philosophy', 'containers/registries'],
     },
     {
       label: 'Models',
       type: 'category',
-      items: ['models/introduction', 'models/create-a-model', 'models/edit-a-model', 'models/delete-a-model'],
+      items: [
+        'models/introduction',
+        'models/create-a-model',
+        'models/edit-a-model',
+        'models/delete-a-model',
+        'models/models-examples',
+      ],
     },
     {
       label: 'Experiments',
