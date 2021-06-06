@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -42,7 +42,7 @@ const features = [
   },
 ];
 
-export default function Home() {
+const Home: FunctionComponent = () => {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
@@ -73,4 +73,6 @@ export default function Home() {
       </main>
     </Layout>
   );
-}
+};
+
+export default Home;

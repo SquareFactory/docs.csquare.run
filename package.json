@@ -1,11 +1,30 @@
 {
   "name": "@csquare-ai/docs.csquare.run",
   "version": "0.1.0",
-  "private": true,
+  "description": "Official documentation of the csquare platform",
+  "keywords": [
+    "documentation",
+    "docs",
+    "csquare"
+  ],
+  "homepage": "https://docs.csquare.run",
+  "bugs": {
+    "email": "mathieu@csquare.ai",
+    "url": "https://github.com/csquare-ai/docs.csquare.run/issues"
+  },
+  "license": "MIT",
+  "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
+  "contributors": [
+    "Clarisse Tarrou <clarisse@csquare.ai> (https://github.com/ArcticSubmarine)",
+    "Valentin Pollart <valentin@csquare.ai> (https://github.com/valentinpollart)"
+  ],
+  "repository": "github:csquare-ai/docs.csquare.run",
   "scripts": {
     "prepare": "npx is-ci || husky install",
     "format": "prettier --write '**'",
     "format:check": "prettier --check '**'",
+    "lint": "eslint \"{src,docs}/**/*.{js,jsx,ts,tsx,md,mdx}\"",
+    "lint:fix": "eslint \"{src,docs}/**/*.{js,jsx,ts,tsx,md,mdx}\" --fix",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -23,34 +42,33 @@
     "@fontsource/rajdhani": "^4.4.2",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@csquare/prettier-config": "^1.1.2",
     "@docusaurus/module-type-aliases": "*",
     "@tsconfig/docusaurus": "^1.0.2",
+    "@types/prop-types": "^15.7.3",
     "@types/react": "^17.0.5",
     "@types/react-helmet": "^6.1.1",
     "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-markdown": "^2.2.0",
+    "eslint-plugin-mdx": "^1.13.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "is-ci": "^2.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "standard-commit": "^4.2.4",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.2"
   },
+  "private": true,
   "prettier": "@csquare/prettier-config"
 }
