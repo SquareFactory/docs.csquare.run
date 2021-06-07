@@ -35,7 +35,7 @@ const features = [
     title: 'Organizations',
     imageUrls: {
       light: 'https://cdn.csquare.run/docs/img/ico-organization-light.svg',
-      dark: 'https://cdn.csquare.run/docs/img/ico-datasets-dark.svg',
+      dark: 'https://cdn.csquare.run/docs/img/ico-organization-dark.svg',
     },
     description: <>Work as a team, invite your collaborators, and manage access permissions.</>,
     path: 'docs/organizations/introduction',
