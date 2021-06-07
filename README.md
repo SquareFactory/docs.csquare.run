@@ -21,13 +21,13 @@ Simply open a pull request and we will be really happy to review!
 ## Documentation conventions
 
 For each feature, usage of step-by-step tutorial is required. For each tutorial, a "Quick Guide" section is mandatory
-and includes a short video of explanation. It also includes a detailed list of all the steps performed. 
-This documentation follows the classic rules of britannic english. Please respect as much as possible 
+and includes a short video of explanation. It also includes a detailed list of all the steps performed.
+This documentation follows the classic rules of britannic english. Please respect as much as possible
 the graphical charter.
 
 ### Video tutorial
 
-In order to film video tutorials for "Quick Guide" sections, we use 
+In order to film video tutorials for "Quick Guide" sections, we use
 [Screenshot & Screen Video Recorder](https://chrome.google.com/webstore/detail/screenshot-screen-video-r/jgmmgiojkjopgnanopiamhbhnpaednfg/support),
 but feel free to use any piece of software that can make clean video for this purpose.
 
@@ -36,8 +36,8 @@ but feel free to use any piece of software that can make clean video for this pu
 1. Interactive elements should be quoted such as code elements (use \`+` for a create button for instance).
 2. References to other parts of the documentation should include a link to the related part.
 
-
 ### List typography
+
 1. Lists should be numbered.
 2. Each list item should be composed one or more sentences starting with uppercase letter, and ending with proper punctuation.
 3. Each item can be split in sub-items.
