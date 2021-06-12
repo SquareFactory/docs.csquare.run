@@ -6,7 +6,7 @@ Proudly written and maintained by:
 
 - Mathieu Bour <mathieu@csquare.ai> - Lead Platform Engineer at csquare
 - Clarisse Tarrou <clarisse@csquare.ai> - Platform Engineer at csquare
-- Valentin Pollart <valentin@csquare.ai> - ClousOps Engineer at csquare
+- Valentin Pollart <valentin@csquare.ai> - CloudOps Engineer at csquare
 
 ## Stack
 

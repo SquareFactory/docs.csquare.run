@@ -68,11 +68,10 @@ module.exports = {
       type: 'category',
       items: [
         'experiments/whats-an-experiment',
-        'experiments/go-to-the-experiment-page',
-        'experiments/create-an-experiment',
         'experiments/run-an-experiment',
         'experiments/stop-an-experiment',
-        'experiments/download-checkpoints',
+        'experiments/go-to-the-experiment-page',
+        'experiments/artifacts',
       ],
     },
   ],
