@@ -19,18 +19,18 @@ In order to run an experiment, you need to have created its [parent model](../mo
 
 ### Step-by-step
 
-1. #### [Select the project](../projects/select-a-project.mdx) you want your experiment to be a part of.
-2. #### Go to the `Models` page using the sidebar.
-3. #### Select to the model you want your experiment to be a part of by clicking on its ID.
-4. #### Click on the `+` button: `Create an experiment` of the `Experiments` widget.
-5. #### Fill the form
-6. Fill the `Commit to clone` field if you want to run your code from a specific commit. If left empty, the latest commit of the branch will be used.
-7. Set the `Billing` options as desired, by indicating the number of nodes to use and the experiment's priority. See more info about billing on the [dedicated documentation](../datasets/resources/billing).
-8. #### Click on the `Submit` button.
+1. [Select the project](../projects/select-a-project.mdx) you want your experiment to be a part of.
+2. Go to the `Experiments` page using the sidebar.
+3. Click on the `+` button: `Create an experiment` of the `Experiments` widget.
+4. Select to the model you want your experiment to be a part of by clicking on its ID.
+5. Adjust the experiments settings:
+   1. Fill the `Commit to clone` field if you want to run your code from a specific commit. If left empty, the latest commit of the branch will be used.
+   2. Set the `Billing` options as desired, by indicating the number of nodes to use and the experiment's priority. See more info about billing on the [dedicated documentation](../datasets/resources/billing).
+6. Click on the `Submit experiment` button.
 
 A loader will appear: it means that your new experiment started running!
 
-**Experiments are automatically run at their creation** (see how to [create an experiment](#create-a-new-experiment)). You can however **re-run** an experiment whenever you want.
+**Experiments are automatically run at their creation**. You can however [re-run](#re-run-an-experiment) an experiment whenever you want.
 
 :::success Tips
 You can check an experiment's status in its [dedicated page](go-to-the-experiment-page) or in its parent [model](../models/introduction)'s page.
@@ -38,7 +38,7 @@ You can check an experiment's status in its [dedicated page](go-to-the-experimen
 
 ## Re-run an experiment
 
-You can also use a previous experiment a template istead of creating a new one from scratch.
+You can also use a previous experiment a template instead of creating a new one from scratch.
 
 ### Quick guide
 
@@ -46,7 +46,7 @@ You can also use a previous experiment a template istead of creating a new one f
 
 ### Step-by-step
 
-1. [Go to the experiment page](go-to-the-experiment-page).
+1. [Go to the experiment page](go-to-the-experiment-page) that you want to re-run.
 2. Fill the form:
    1. Fill the `Commit to clone` field if you want to run your code from a specific commit. If left empty, the latest commit of the branch will be used.
    2. Set the `Billing` options as desired, by indicating the number of nodes to use and the experiment's priority. See more info about billing on the [dedicated documentation](../datasets/resources/billing).
