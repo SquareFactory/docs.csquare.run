@@ -28,7 +28,7 @@ const features = [
       light: 'https://cdn.csquare.run/docs/img/ico-datasets-light.svg',
       dark: 'https://cdn.csquare.run/docs/img/ico-datasets-dark.svg',
     },
-    description: <>Datasets are used to train models. Create a dataset using HTTP upload or Amazon S3.</>,
+    description: <>Datasets are used to train models. Upload dataset files using S3 command line interface.</>,
     path: 'docs/datasets/introduction',
   },
   {
