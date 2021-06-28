@@ -24,6 +24,11 @@ module.exports = {
           position: 'left',
         },
         {
+          href: 'https://api.csquare.run',
+          label: 'REST API',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/csquare-ai',
           label: 'GitHub',
           position: 'right',
