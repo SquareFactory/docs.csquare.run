@@ -11,7 +11,7 @@ Experiments allow you to train deep-learning models while taking full advantage 
 In order to run an experiment, you need to have created its [parent model](../models/create-a-model).
 :::
 
-## Create a new experiment
+## Run a new experiment
 
 ### Quick guide
 
@@ -35,6 +35,60 @@ A loader will appear: it means that your new experiment started running!
 :::success Tips
 You can check an experiment's status in its [dedicated page](go-to-the-experiment-page) or in its parent [model](../models/introduction)'s page.
 :::
+
+### Experiments batching
+
+You may want to run the same experiment with different set of hyper parameters.
+To serve this purpose, we have created a special syntax which allows you to generate multiple experiments from a single command.
+
+#### List operator: `%[foo,bar,baz]%`
+
+The is **list operator** allows to specify multiple, arbitrary values.
+
+```shell title="List operator syntax"
+%[value1,value2,value3]%
+
+Output:
+
+value1
+value2
+value3
+```
+
+```shell title="Example: train a model with 10, 20 and 50 epochs"
+python train.py --epochs=%[10,20,50]%
+
+Output:
+
+python train.py --epochs=10
+python train.py --epochs=20
+python train.py --epochs=50
+```
+
+#### Range operator: `%(min,max,[increment])%`
+
+Inspired from the `range()` Python function, the range operator allow to generate a range of **numeric** values.
+
+```shell title="Example: train a model with 10, 20 and 30 epochs"
+python train.py --epochs=%(10,30,10)%
+
+Output:
+
+python train.py --epochs=10
+python train.py --epochs=20
+python train.py --epochs=30
+```
+
+:::danger
+Increment, if specified, cannot be equal to zero.
+:::
+
+#### Limitations
+
+The experiment batching has the following limitations;
+
+- You cannot generate for than 10000 experiments using the range operator.
+- The total number of generated experiments cannot exceed 65535.
 
 ## Re-run an experiment
 
