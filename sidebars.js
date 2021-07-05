@@ -26,6 +26,7 @@ module.exports = {
           items: [
             'projects/collaborators/whats-a-collaborator',
             'projects/collaborators/invite-a-collaborator',
+            'projects/collaborators/accept-an-invitation',
             'projects/collaborators/update-permissions',
             'projects/collaborators/remove-a-collaborator',
           ],
