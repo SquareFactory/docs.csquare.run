@@ -26,7 +26,7 @@ In order to read, write or delete files to your datasets, you need to get the da
 1. Select the project and got to the dataset page.
 2. Copy your access and secret key.
 
-## Using the c-square's explorer
+## Using the csquare's explorer
 
 ### Quick guide
 
@@ -78,7 +78,7 @@ Options:
 [...]
 ```
 
-### Configuring `s3cmd `
+### Configuring `s3cmd`
 
 Once you have a working CLI, you can configure `s3cmd` by running:
 
@@ -152,3 +152,45 @@ If you do not want to save your `s3cmd` configuration or want to use `s3cmd`n wi
 ```shell title="Usage without configuration"
 s3cmd --access_key=[access-key] --secret_key=[secret-key] --host=storage.csquare.run --host-bucket=storage.csquare.run [command] [args]
 ```
+
+## Using the `s5cmd` command line interface
+
+[s5cmd](https://github.com/peak/s5cmd) is a more powerful than `s3cmd` and supports parallelization of the uploads and has in general [much better performances](https://github.com/peak/s5cmd#benchmarks) than most of the other S3 CLI clients.
+However, usage of `s5cmd` is a bit more complex than `s3cmd` because it depends on the AWS CLI configuration files.
+
+### Installation
+
+1. Install the [AWS CLI version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (no AWS account is required), then check the AWS CLI installation via the following command:
+
+```shell title="Check AWS CLI installation"
+aws --version
+```
+
+2. Install s5cmd: follow [the installation instructions](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html), ensure that `s5cmd` is properly accessible with:
+
+```shell title="Check s5cmd installation"
+s5cmd --help
+```
+
+### Configuring `s5cmd`
+
+Configure your dataset access and secret keys. In this example, we are using the dataset `my-dataset` with its access key `C2-2zJBcUJTG0GIHbvpsm9xe` and secret key `9sfHEWO11HCj8yvBdVevdd`.
+
+```shell title="Setup your access and secret keys"
+aws configure --profile my-dataset
+> AWS Access Key ID [None]: C2-2zJBcUJTG0GIHbvpsm9xe
+> AWS Secret Access Key [None]: 9sfHEWO11HCj8yvBdVevdd
+> Default region name [None]:
+> Default output format [None]:
+```
+
+### Usage
+
+Use `s5cmd` using the `AWS_PROFILE` environment variable and `--endpoint-url=https://storage.csquare.app` flag:
+
+```shell title="s5cmd usage"
+export AWS_PROFILE="my-dataset"
+s5cmd --endpoint-url=https://storage.csquare.app cp ./ s3://my-dataset
+```
+
+Refer to the [`s5cmd` documentation](https://github.com/peak/s5cmd#usage) for more information.
