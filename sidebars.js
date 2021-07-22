@@ -20,6 +20,7 @@ module.exports = {
       items: [
         'projects/introduction',
         'projects/create-a-project',
+        'projects/copy-a-project-template',
         'projects/select-a-project',
         'projects/delete-a-project',
         {
