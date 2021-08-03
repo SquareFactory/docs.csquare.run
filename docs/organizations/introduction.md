@@ -23,3 +23,5 @@ Organization access are controlled using **permissions**, that can be managed vi
 
 - [create an organization](create-an-organization)
 - [invite to organization](invite-to-organization)
+- [remove a collaborator](remove-a-collaborator)
+- [delete an organization](delete-an-organization)
