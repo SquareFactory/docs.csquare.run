@@ -2,6 +2,12 @@
 title: Introduction to datasets
 ---
 
+:::success Tip
+
+All the datasets actions can be performed from the **Quick start** module during the step called _Manage your datasets_.
+
+:::
+
 ## Definition
 
 A **dataset** is a collection of data (texts, images, videos, tables...) that is used in
