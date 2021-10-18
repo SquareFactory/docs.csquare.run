@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React, { FunctionComponent } from 'react';
+import React, { VFC } from 'react';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -42,9 +42,8 @@ const features = [
   },
 ];
 
-const Home: FunctionComponent = () => {
-  const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+const Home: VFC = () => {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title={`Hello from ${siteConfig.title}`} description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>

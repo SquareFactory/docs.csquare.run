@@ -2,11 +2,9 @@
 /.husky
 /.idea
 /build
-/docker
 /node_modules
 /static
 
-/Dockerfile
-/package-lock.json
+/pnpm-lock.yaml
 /.browserslistrc
 /.*ignore
