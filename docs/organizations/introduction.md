@@ -4,8 +4,9 @@ sidebar_label: Introduction
 ---
 
 ## Definition
+
 **Organizations** are groups of people that can share [projects](../projects/introduction) and data.
-Organization *members* are counted in seats.
+Organization _members_ are counted in seats.
 
 ## Permissions
 
@@ -29,6 +30,6 @@ Please refer to the pricing table for more information.
 ...how to:
 
 - [create an organization](create-an-organization)
-- [invite to organization](invite-to-organization)
+- [invite to organization](invite-a-collaborator.mdx)
 - [remove a collaborator](remove-a-collaborator)
 - [delete an organization](delete-an-organization)
