@@ -16,6 +16,7 @@ jobs:
         run: pnpm lint
   build:
     name: Build static content
+    needs: [lint]
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -24,25 +25,10 @@ jobs:
         uses: ./.github/actions/setup
       - name: Build Docusaurus
         run: pnpm build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: static-content
-          path: build/
-  deploy:
-    name: Deploy to Google Cloud Storage
-    needs: [lint, build]
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Download static content from artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: static-content
-          path: build/
       - name: Setup Google Cloud SDK
         uses: mathieu-bour/setup-gcloud@1.3.0
         with:
           version: local
           service-account-key: ${{ secrets.GCLOUD_AUTH }}
-      - name: Send Docusaurus files
+      - name: Upload build files
         run: gsutil -m rsync -r -d build/ gs://docs.csquare.run

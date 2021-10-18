@@ -18,9 +18,9 @@ module.exports = {
       items: [
         'organizations/introduction',
         'organizations/create-an-organization',
+        'organizations/delete-an-organization',
         'organizations/invite-a-collaborator',
         'organizations/remove-a-collaborator',
-        'organizations/delete-an-organization',
       ],
     },
     {

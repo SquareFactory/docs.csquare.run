@@ -29,7 +29,7 @@ Please refer to the pricing table for more information.
 
 ...how to:
 
-- [create an organization](create-an-organization)
+- [create an organization](create-an-organization.mdx)
 - [invite to organization](invite-a-collaborator.mdx)
-- [remove a collaborator](remove-a-collaborator)
-- [delete an organization](delete-an-organization)
+- [remove a collaborator](remove-a-collaborator.mdx)
+- [delete an organization](delete-an-organization.mdx)
