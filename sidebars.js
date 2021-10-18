@@ -6,12 +6,19 @@ module.exports = {
     'get-started/welcome',
     'get-started/quick-start',
     {
+      label: 'Concepts',
+      type: 'category',
+      items: [
+        'concepts/hierarchy'
+      ]
+    },
+    {
       label: 'Organizations',
       type: 'category',
       items: [
         'organizations/introduction',
         'organizations/create-an-organization',
-        'organizations/invite-to-organization',
+        'organizations/invite-a-collaborator',
         'organizations/remove-a-collaborator',
         'organizations/delete-an-organization',
       ],
@@ -51,16 +58,16 @@ module.exports = {
       ],
     },
     {
-      label: 'Containers',
-      type: 'category',
-      items: ['containers/philosophy', 'containers/registries'],
-    },
-    {
       label: 'Models',
       type: 'category',
       items: [
         'models/introduction',
         'models/create-a-model',
+        {
+          label: 'Containers',
+          type: 'category',
+          items: ['models/containers/philosophy', 'models/containers/registries'],
+        },
         'models/edit-a-model',
         'models/delete-a-model',
         'models/models-examples',

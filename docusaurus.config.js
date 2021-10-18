@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'docs.csquare.run', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'csquare.ai',
+      title: 'csquare',
       logo: {
         alt: 'csquare logo',
         src: 'img/csquare-symbol.svg',
