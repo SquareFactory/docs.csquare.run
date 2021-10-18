@@ -20,7 +20,6 @@
   ],
   "repository": "github:csquare-ai/docs.csquare.run",
   "scripts": {
-    "prepare": "npx is-ci || husky install",
     "format": "prettier --write '**'",
     "format:check": "prettier --check '**'",
     "lint": "eslint \"{src,docs}/**/*.{js,jsx,ts,tsx,md,mdx}\"",
@@ -41,6 +40,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7",
     "@csquare/prettier-config": "^1.1.2",
     "@docusaurus/core": "2.0.0-beta.7",
     "@docusaurus/module-type-aliases": "*",
@@ -58,9 +58,6 @@
     "eslint-plugin-mdx": "^1.13.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^6.0.0",
-    "is-ci": "^2.0.0",
-    "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "standard-commit": "^4.2.4",
     "typescript": "^4.3.2"

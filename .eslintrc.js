@@ -1,4 +1,6 @@
 module.exports = {
+  root: true,
+  plugins: ['markdown'],
   extends: [
     'eslint:recommended',
     'prettier',
@@ -7,22 +9,24 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:mdx/recommended',
   ],
+  env: {
+    "node": true,
+    "browser": true,
+  },
   settings: {
     react: {
       version: 'detect',
     },
     'mdx/code-blocks': true,
   },
-  root: true,
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
-  plugins: ['markdown'],
   overrides: [
     {
       files: ['**/*.md'],
