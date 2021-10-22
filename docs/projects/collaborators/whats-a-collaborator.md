@@ -4,8 +4,9 @@ title: What's a collaborator?
 
 ## Definition
 
-**Collaborators** are people you want to share your projects with. They can be from one of your [organizations](../../organizations/introduction) or
-external contributors.
+**Collaborators** are people you want to share your projects with. Collaborators of your project are
+also [members](../../organizations/invite-a-collaborator.mdx) of the
+project [organization](../../organizations/introduction.md).
 
 ## Permissions
 

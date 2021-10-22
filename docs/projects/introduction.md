@@ -4,14 +4,15 @@ title: Introduction to projects
 
 ## Definition
 
-A **project** reassemble [models](../models/introduction.md) and [datasets](../datasets/introduction.md). Projects can be shared with [collaborators](collaborators/whats-a-collaborator.md).
+A **project** is made of [models](../models/introduction.md) and [datasets](../datasets/introduction.md). Projects can
+be shared with [collaborators](collaborators/whats-a-collaborator.md) to enable collaboration.
 
 ## In this section, you will learn...
 
 ...how to:
 
-- [create a project](create-a-project.mdx)
-- [copy a project template](copy-a-project-template.mdx)
-- [select a project](select-a-project.mdx)
-- [delete a project](delete-a-project.mdx)
+- [create a project](create-project.mdx)
+- [copy a project template](use-project-template.mdx)
+- [select a project](select-project.mdx)
+- [delete a project](delete-project.mdx)
 - [manage collaborators](collaborators/whats-a-collaborator.md)

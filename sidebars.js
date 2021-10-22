@@ -8,9 +8,7 @@ module.exports = {
     {
       label: 'Concepts',
       type: 'category',
-      items: [
-        'concepts/hierarchy'
-      ]
+      items: ['concepts/hierarchy'],
     },
     {
       label: 'Organizations',
@@ -26,10 +24,10 @@ module.exports = {
     {
       items: [
         'projects/introduction',
-        'projects/create-a-project',
-        'projects/copy-a-project-template',
-        'projects/select-a-project',
-        'projects/delete-a-project',
+        'projects/create-project',
+        'projects/select-project',
+        'projects/delete-project',
+        'projects/use-project-template',
         {
           items: [
             'projects/collaborators/whats-a-collaborator',
