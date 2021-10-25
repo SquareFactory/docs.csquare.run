@@ -5,7 +5,7 @@ module.exports = {
   url: 'https://docs.csquare.run',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'csquare.ai', // Usually your GitHub org/user name.
   projectName: 'docs.csquare.run', // Usually your repo name.

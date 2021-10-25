@@ -10,7 +10,7 @@ An **experiment** is a combination of _versioned code_ and one or several [_data
 
 ...how to:
 
-- [run an experiment](run-an-experiment.mdx)
-- [stop an experiment](stop-an-experiment.mdx)
+- [run an experiment](run-experiment.mdx)
+- [stop an experiment](stop-experiment.mdx)
 - [go to the experiment page](go-to-the-experiment-page.mdx)
 - [configure artifacts](artifacts.mdx)

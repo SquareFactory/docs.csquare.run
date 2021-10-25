@@ -17,8 +17,8 @@ order to train a [model](../models/introduction). A dataset can be used to one o
 
 ...how to:
 
-- [create a dataset](create-a-dataset.mdx)
-- [import files to a dataset](import-files-to-a-dataset.mdx)
-- [share a dataset across multiple projects](import-an-existing-dataset-to-a-project.mdx)
-- [remove a dataset](remove-a-dataset.mdx) from a project
-- [delete a dataset](delete-a-dataset.mdx)
+- [create a dataset](create-dataset.mdx)
+- [import files to a dataset](import-files-to-dataset.mdx)
+- [share a dataset across multiple projects](import-existing-dataset-to-project.mdx)
+- [remove a dataset](remove-dataset.mdx) from a project
+- [delete a dataset](delete-dataset.mdx)
